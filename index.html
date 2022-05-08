@@ -14,11 +14,48 @@
         <link rel="icon" href="./assets/img/logo/purple.png">
         <link rel="stylesheet" href="./assets/css/purpose.css" id="stylesheet" />
         <link rel="stylesheet" type="text/css" href="./assets/css/custom.css">
-        
+        <!-- Page loading styles -->
+    <style>
+     
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 10);
+        };
+      })();
+    </script>
         
     </head>
 
     <body class="bg-primary g-sidenav-hidden">
+        <!-- Page loading spinner -->
+    <div class="page-loading active">
+    </div>
         <header class="header header-transparent" id="header-main">
             <!-- Main navbar -->
             <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" id="navbar-main">
@@ -109,7 +146,10 @@
 				                <div class="row align-items-center justify-content-around">
 				                  <div class="col-lg-6 text-center text-lg-left">
 				                    <h1>I am Jenus Alakere, a software Engineer</h1>
-				                    <p class="lead mt-4">I put all my experience and technical know-how in all projects to give the best products and solution.</p>
+				                    <p class="lead mt-4">
+				                      Self motivated, eager to learn and improve. 
+				                      I put all my experience and technical know-how in all projects to give the best solution and product.
+				                    </p>
 				                    <div class="mt-5">
 				                      <a href="https://github.com/jjenus/" class="btn btn-dark btn-icon rounded-pill hover-translate-y-n3 mr-4">
 				                        <span class="btn-inner--icon"><i class="fab fa-github"></i></span>
@@ -135,7 +175,7 @@
                 </div>
             </section>
             
-            <div id="headers-header-4" class="d-md-none " title="headers/header-4.html">
+            <div id="headers-header-4" class="d-md-none " title="I am Alakere">
 		          <section class="spotlight pt-5 bg-cover bg-size--cover" data-spotlight="fullscreen" data-offset-top="#header-main" style="background-image: url(./assets/img/jenus.png); padding-top: 187.188px;">
 		            <div class="bg-absolute-cover bg-size--contain d-flex align-items-center zindex-100">
                     <figure class="w-100">
@@ -178,10 +218,10 @@
 		                <div class="col">
 		                  <div class="row align-items-center justify-content-center">
 		                    <div class="col-md-9 col-lg-7 text-left">
-		                      <h1 class="text-white lh-150 mb-4">I am Jenus Alakere. B.eng Electrical and Electronics Engineering. Software Engineer.</h1>
+		                      <h1 class="text-white lh-150 mb-4">I am Jenus Alakere. B.eng in Electrical and Electronics Engineering. A Software Engineer.</h1>
 		                      <ul class="list-inline">
-		                        <li class="list-inline-item text-white">Since February, 2019</li>
-		                        <li class="list-inline-item text-white">Till date.</li>
+		                        <li class="list-inline-item text-white">Since 2019</li>
+		                        <li class="list-inline-item text-white">To Date.</li>
 		                      </ul>
 		                      <span class="clearfix"></span>
 		                      <div class="d-flex d-flex-row align-items-center mt-2">
@@ -220,7 +260,7 @@
                                 <div class="px-5 pb-5">
                                     <div class="py-5">
                                         <div class="icon text-light">
-                                            <i class="fas fa-circle"></i>
+                                            <i class="fas fa-code "></i>
                                         </div>
                                     </div>
                                     <h5 class="text-white ">Fullstack web development</h5>
@@ -242,11 +282,14 @@
                                 <div class="px-5 pb-5">
                                     <div class="py-5">
                                         <div class="icon text-info">
-                                            <i class="fas fa-code"></i>
+                                            <i class="fas fa-terminal"></i>
                                         </div>
                                     </div>
                                     <h5 class="">Backend Engineering</h5>
-                                    <p class="mt-2 mb-0">Debug or built new server scripts in no time with core php and codeigniter 4.</p>
+                                    <p class="mt-2 mb-0">
+                                      Debug or built new server scripts in no time with core php and codeigniter 4.
+                                      Purchase and renew DNS subscriptions and hosting space. 
+                                    </p>
                                     <div class="mt-4">
                                         <a class="badge badge-lg badge-pill badge-soft-info d-inline-block my-1 px-3">SQL</a>
                                         <a class="badge badge-lg badge-pill badge-soft-info d-inline-block my-1 px-3">php</a>
@@ -260,8 +303,8 @@
                             <div class="card  hover-shadow-lg hover-translate-y-n10">
                                 <div class="px-5 pb-5">
                                     <div class="py-5">
-                                        <div class="icon">
-                                            <i class="fas fa-desktop "></i>
+                                        <div class="icon ">
+                                            <i class="fab fa-java text-danger"></i>
                                         </div>
                                     </div>
                                     <h5 class="text-white">Desktop Application</h5>
@@ -269,9 +312,9 @@
                                       Design and build efficient desktop applications with java.
                                     </p>
                                     <div class="mt-4">
-                                        <a class="badge badge-lg badge-pill badge-soft-info d-inline-block my-1 px-3">Java</a>
-                                        <a class="badge badge-lg badge-pill badge-soft-info d-inline-block my-1 px-3">JavaFx</a>
-                                        <a class="badge badge-lg badge-pill badge-soft-info d-inline-block my-1 px-3">Scene builder</a>
+                                        <a class="badge badge-lg badge-pill badge-soft-danger d-inline-block my-1 px-3">Java</a>
+                                        <a class="badge badge-lg badge-pill badge-soft-danger d-inline-block my-1 px-3">JavaFx</a>
+                                        <a class="badge badge-lg badge-pill badge-soft-danger d-inline-block my-1 px-3">Scene builder</a>
                                     </div>
                                 </div>
                             </div>
@@ -280,7 +323,7 @@
                 </div>
             </section>
            
-            <section class="slice slice-lg ">
+            <section class="slice">
                 <div class="container">
                   <h3 class="pt-4 text-center mb-4">Projects</h3>
                   <div class="row">
@@ -302,7 +345,7 @@
                             </div>
                             <div>
                               <div class="actions">
-                                <a href="https://github.com/jjenus/laundry" class="action-item mr-3"><i class="fas fa-github"></i></a>
+                                <a href="https://github.com/jjenus/laundry" class="action-item mr-3"><i class="fab fa-github"></i></a>
                                 <a href="https://jjenus-laundry.alwaysdata.net" class="action-item mr-3"><i class="fas fa-eye"></i></a>
                                 <a href="#!" class="action-item d-none"><i class="fas fa-heart"></i></a>
                               </div>
@@ -311,6 +354,35 @@
                         </div>
                       </div>
                     </div>
+                    <div class="col-lg-6">
+                      <div class="card card-overlay card-hover-overlay">
+                        <figure class="figure">
+                          <img alt="Image placeholder" src="./assets/img/project_1/truthy-1.png" class="img-fluid">
+                        </figure>
+                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                          <div class="overlay-text w-75 mt-auto p-4">
+                            <p class="lead">
+                              Make reviews via tweets.
+                            </p>
+                            <a href="#!" class="link link-underline-white font-weight-bold">Truthy</a>
+                          </div>
+                          <div class="overlay-actions w-100 card-footer mt-auto d-flex justify-content-between align-items-center">
+                            <div>
+                              <a href="https://jjenus.alwaysdata.net/" class="h6 mb-0">PHP, Twitter API</a>
+                            </div>
+                            <div>
+                              <div class="actions">
+                                <a href="https://github.com/jjenus/truthy" class="action-item mr-3"><i class="fab fa-github"></i></a>
+                                <a href="https://jjenus.alwaysdata.net/" class="action-item mr-3"><i class="fas fa-eye"></i></a>
+                                <a href="#!" class="action-item d-none"><i class="fas fa-heart"></i></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
                     <div class="col-lg-6">
                       <div class="card card-overlay card-hover-overlay">
                         <figure class="figure">
@@ -329,7 +401,7 @@
                             </div>
                             <div>
                               <div class="actions">
-                                <a href="https://github.com/jjenus/planner" class="action-item mr-3"><i class="fas fa-github"></i></a>
+                                <a href="https://github.com/jjenus/planner" class="action-item mr-3"><i class="fab fa-github"></i></a>
                                 <a href="https://github.com/jjenus/planner" class="action-item mr-3"><i class="fas fa-eye"></i></a>
                                 <a href="#!" class="action-item d-none"><i class="fas fa-heart"></i></a>
                               </div>
@@ -361,8 +433,8 @@
                                 <div class="card-body">
                                     <div class="">
                                         <div class="pb-5">
-                                            <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow ">
-                                                <i class="tim-icons icon-bold "></i>
+                                            <div class="icon">
+                                                <i class="fab fa-bootstrap"></i>
                                             </div>
                                         </div>
                                         <h5 class="font-weight-bold">Bootstrap</h5>
@@ -377,7 +449,7 @@
                                 <div class="card-body">
                                     <div class="">
                                         <div class="pb-5">
-                                            <div class="icon bg-primary text-white rounded-circle icon-lg icon-shape shadow">
+                                            <div class="icon ">
                                                 <i class="fab fa-php"></i>
                                             </div>
                                         </div>
@@ -385,8 +457,8 @@
                                         <div style="overflow: auto;" class="mt-2 bg-dark p-2 rounded text-info mb-0">
                                           <code style="">&lt;php <br>
                                             &emsp; $app->activate_security(); <br>
-                                            &emsp; <span class="d-md-inline d-none">echo "Basic security is added &emsp; for free";</span>
-                                                   <span class="d-md-none">echo "Basic security is <br> &emsp; added for free";</span>
+                                            &emsp; <span class="d-md-inline d-none">echo "Basic security is added &emsp; at no cost";</span>
+                                                   <span class="d-md-none">echo "Basic security is <br> &emsp; added at no cost";</span>
                                             <br>?&gt;</code>
                                         </div>
                                     </div>
@@ -399,7 +471,7 @@
                                 <div class="card-body">
                                     <div class="">
                                         <div class="pb-5">
-                                            <div class="icon align-items-center bg-primary text-white rounded-circle icon-lg icon-shape shadow ">
+                                            <div class="icon ">
                                               <i class="fab fa-vuejs m-auto"></i>
                                             </div>
                                         </div>
