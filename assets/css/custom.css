@@ -78,3 +78,176 @@
     }
 }
 
+/* Fix mobile hero wave positioning */
+#headers-header-4 .spotlight {
+    position: relative;
+    overflow: hidden;
+}
+
+#headers-header-4 .shape-container[data-shape-position="bottom"] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#headers-header-4 .spotlight-holder {
+    position: relative;
+    z-index: 5;
+}
+
+/* Ensure Java icon is visible */
+.fa-java.text-danger {
+    color: #dc3545 !important;
+}
+
+/* Fix icon visibility in cards */
+.card .icon i {
+    font-size: 2.5rem;
+}
+
+.card.bg-primary .icon i {
+    color: #ffffff;
+}
+
+/* Navigation enhancements */
+.navbar-nav .nav-link {
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    padding: 0.5rem 1rem !important;
+    transition: all 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 0.4rem;
+    font-size: 0.75rem;
+}
+
+/* Footer enhancements */
+.footer-dark .footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.2rem 0;
+}
+
+.footer-dark .footer-link:hover {
+    color: #fff;
+    transform: translateX(5px);
+    text-decoration: none;
+}
+
+.footer-dark .heading {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+/* Mobile hero improvements */
+#headers-header-4 .spotlight-holder {
+    position: relative;
+    z-index: 5;
+}
+
+#headers-header-4 .badge {
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+#headers-header-4 h1 {
+    font-size: 2rem;
+}
+
+#headers-header-4 .btn-outline-white {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+#headers-header-4 .btn-outline-white:hover {
+    background: #fff;
+    color: #273444;
+    border-color: #fff;
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Delimiter enhancement */
+.delimiter-top {
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+/* Card hover improvements */
+.card.hover-shadow-lg:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer delimiter */
+.footer-dark .delimiter-top {
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Navbar sticky shadow */
+.navbar-sticky.sticky {
+    box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08);
+}
+
+/* Button gap utility */
+.d-flex[style*="gap"] {
+    gap: 0.75rem;
+}
+
+/* Responsive mobile hero text */
+@media (max-width: 767.98px) {
+    #headers-header-4 h1 {
+        font-size: 1.75rem;
+    }
+    
+    #headers-header-4 .badge {
+        font-size: 0.7rem;
+    }
+}
+/* Fix mobile hero wave positioning */
+#headers-header-4 .spotlight {
+    position: relative;
+    overflow: hidden;
+}
+
+#headers-header-4 .shape-container[data-shape-position="bottom"] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#headers-header-4 .spotlight-holder {
+    position: relative;
+    z-index: 5;
+}
+
+/* Ensure Java icon is visible */
+.fa-java.text-danger {
+    color: #dc3545 !important;
+}
+
+/* Fix icon visibility in cards */
+.card .icon i {
+    font-size: 2.5rem;
+}
+
+.card.bg-primary .icon i {
+    color: #ffffff;
+}

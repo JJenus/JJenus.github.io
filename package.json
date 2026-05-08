@@ -1,0 +1,19 @@
+{
+  "name": "jenus-portfolio",
+  "version": "2.0.0",
+  "description": "Jenus Alakere - Software Engineer Portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/server.js",
+    "start": "node scripts/server.js",
+    "dev:debug": "node --inspect scripts/server.js",
+    "build": "echo '[READY] Static site ready - no build required'"
+  },
+  "keywords": ["portfolio", "software-engineer", "static-site", "Alakere", "jjenus"],
+  "author": "Jenus Alakere",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
