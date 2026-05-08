@@ -35,19 +35,25 @@ const projectsData = [
         highlights: ['Serverless Deployment', 'SEO Optimized', 'Responsive Design']
     },
     {
-        id: 'laundry',
-        title: 'Qliina - Laundry Management System',
-        description: 'Comprehensive laundry tracking SaaS designed to streamline laundry processes, manage orders, and track customer deliveries efficiently with real-time updates.',
-        shortDescription: 'Laundry tracking and order management SaaS.',
-        image: './assets/img/project_1/laundry-3.png',
-        liveUrl: 'https://jjenus-laundry.alwaysdata.net',
-        githubUrl: 'https://github.com/jjenus/laundry',
-        tech: 'CodeIgniter, Vue.js, MySQL',
+        id: 'falcon',
+        title: 'Falcon - GPS Fleet Tracking & Telematics',
+        description: 'Multi-tenant SaaS platform for real-time vehicle tracking, geofencing, and fleet analytics. Processes high-volume GPS telemetry from 65K+ vehicles with sub-second refresh, smart geofence automation, and incident playback.',
+        shortDescription: 'Real-time GPS fleet tracking with geofencing, telemetry, and analytics for 100+ devices.',
+        image: './assets/img/project_1/falcon.png',
+        liveUrl: 'https://datanucleusinc.com/products/gps-tracking',
+        githubUrl: '#',
+        tech: 'Java, Spring Boot, ActiveMQ, MySQL, GPS Protocols (GT06, Autoseeker)',
         category: 'web',
         featured: true,
         icon: 'eye',
-        year: 2023,
-        highlights: ['Order Management', 'Customer Tracking', 'Real-time Updates']
+        year: 2024,
+        highlights: [
+            'Real-time GPS Telemetry',
+            'Multi-protocol Device Ingestion',
+            'Smart Geofence Automation',
+            'Incident Replay & Analytics'
+        ],
+        privateRepo: true
     },
     {
         id: 'fpams',
@@ -63,10 +69,24 @@ const projectsData = [
         icon: 'download',
         year: 2022,
         requirements: [
-            'JRE 1.8.*',
-            'Digital Persona Onetouch RTE'
+            'JRE 1.8.*, Digital Persona Onetouch RTE'
         ],
         highlights: ['Fingerprint Recognition', 'Attendance Tracking', 'Report Generation']
+    },
+    {
+        id: 'laundry',
+        title: 'Qliina - Laundry Management System',
+        description: 'Comprehensive laundry tracking SaaS designed to streamline laundry processes, manage orders, and track customer deliveries efficiently with real-time updates.',
+        shortDescription: 'Laundry tracking and order management SaaS.',
+        image: './assets/img/project_1/laundry-3.png',
+        liveUrl: '#',
+        githubUrl: 'https://github.com/jjenus/laundry',
+        tech: 'CodeIgniter, Vue.js, MySQL',
+        category: 'web',
+        featured: true,
+        icon: 'eye',
+        year: 2023,
+        highlights: ['Order Management', 'Customer Tracking', 'Real-time Updates']
     },
     {
         id: 'truthy',
@@ -74,7 +94,7 @@ const projectsData = [
         description: 'Platform that enables users to make and aggregate reviews via tweets. Leverages Twitter API for authentic, social-proof reviews.',
         shortDescription: 'Make reviews via tweets.',
         image: './assets/img/project_1/truthy-1.png',
-        liveUrl: 'https://jjenus.alwaysdata.net/',
+        liveUrl: 'https://github.com/jjenus/truthy',
         githubUrl: 'https://github.com/jjenus/truthy',
         tech: 'PHP, Twitter API',
         category: 'web',

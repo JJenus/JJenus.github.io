@@ -251,3 +251,21 @@ html {
 .card.bg-primary .icon i {
     color: #ffffff;
 }
+
+/* Desktop: dark nav links visible on light hero background */
+@media (min-width: 992px) {
+    .navbar-dark.navbar-transparent:not(.sticky) .nav-link {
+        color: #273444 !important;
+    }
+    .navbar-dark.navbar-transparent:not(.sticky) .nav-link:hover {
+        color: #6e00ff !important;
+    }
+}
+
+/* Mobile: ensure nav links are solid white and visible over purple overlay */
+@media (max-width: 991.98px) {
+    #navbar-main.navbar-dark .nav-link {
+        color: #ffffff !important;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    }
+}

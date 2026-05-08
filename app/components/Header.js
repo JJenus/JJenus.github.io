@@ -8,14 +8,13 @@ class Header extends Component {
     }
 
     template() {
-        // WhatsApp URL
-        const whatsappNumber = '2347048080326'; // Replace with your actual WhatsApp number
+        const whatsappNumber = '2347048080326';
         const whatsappMessage = encodeURIComponent('Hi Jenus, I would like to discuss a project.');
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 
         return `
             <header class="header header-transparent" id="header-main" role="banner">
-                <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-dark" 
+                <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark navbar-sticky" 
                      id="navbar-main" 
                      role="navigation" 
                      aria-label="Main navigation">

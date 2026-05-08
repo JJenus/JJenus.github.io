@@ -47,7 +47,7 @@ class Services extends Component {
                     <div class="px-5 pb-5">
                         <div class="py-5">
                             <div class="icon">
-                                <i class="fas ${service.icon} ${iconColorClass}"></i>
+                                <i class="${service.icon} ${iconColorClass}"></i>
                             </div>
                         </div>
                         <h5 class="${textColor}">${service.title}</h5>
