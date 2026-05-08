@@ -28,6 +28,13 @@ class Projects extends Component {
 
     createProjectCard(project) {
         const actionIcon = project.icon === 'download' ? 'fa-download' : 'fa-eye';
+        const githubLink = project.privateRepo 
+            ? `<span class="action-item mr-3 text-muted" title="Private repository">
+                 <i class="fas fa-lock"></i>
+               </span>`
+            : `<a href="${project.githubUrl}" class="action-item mr-3" target="_blank" rel="noopener noreferrer">
+                 <i class="fab fa-github"></i>
+               </a>`;
         
         return `
             <div class="col-lg-6">
@@ -37,7 +44,7 @@ class Projects extends Component {
                     </figure>
                     <div class="card-img-overlay d-flex flex-column align-items-center p-0">
                         <div class="overlay-text w-75 mt-auto p-4 py-2 py-md-4">
-                            <p class="text-sm tex-sm-lg">
+                            <p class="text-sm">
                                 ${project.shortDescription}
                                 ${project.requirements ? this.getRequirements(project.requirements) : ''}
                             </p>
@@ -54,9 +61,7 @@ class Projects extends Component {
                             </div>
                             <div>
                                 <div class="actions">
-                                    <a href="${project.githubUrl}" class="action-item mr-3" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
-                                    </a>
+                                    ${githubLink}
                                     <a href="${project.liveUrl}" class="action-item mr-3" target="_blank" rel="noopener noreferrer">
                                         <i class="fas ${actionIcon}"></i>
                                     </a>
