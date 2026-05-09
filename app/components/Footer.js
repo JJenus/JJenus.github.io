@@ -13,13 +13,12 @@ class Footer extends Component {
             <footer class="footer footer-dark bg-gradient-primary" role="contentinfo">
                 <div class="container">
                     <div class="row pt-md pt-5">
-                        <!-- Brand Column -->
                         <div class="col-lg-4 mb-5 mb-lg-0">
                             <a href="/" aria-label="${this.data.name} - Home">
                                 <img src="${this.data.logo.light}" alt="${this.data.name}" style="height: 45px;" />
                             </a>
                             <p class="mt-3 text-sm opacity-8">
-                                ${this.data.description}
+                                I strive to design backend systems that keep working when things don’t go as planned.
                             </p>
                             <div class="mt-4">
                                 <a href="mailto:${this.data.email.business}" 
@@ -29,31 +28,28 @@ class Footer extends Component {
                             </div>
                         </div>
 
-                        <!-- Quick Links -->
                         <div class="col-lg-2 col-md-4 mb-5 mb-lg-0">
-                            <h5 class="heading text-white mb-3">Quick Links</h5>
+                            <h5 class="heading text-white mb-3">Navigate</h5>
                             <ul class="list-unstyled">
                                 <li><a href="#services" class="footer-link" data-scroll-to="services-container">Services</a></li>
                                 <li><a href="#projects" class="footer-link" data-scroll-to="projects-container">Projects</a></li>
+                                <li><a href="#tools" class="footer-link" data-scroll-to="tools-container">Tech Stack</a></li>
                                 <li><a href="${this.data.resume}" target="_blank" class="footer-link">Resume</a></li>
-                                <li><a href="mailto:${this.data.email.business}?subject=Project%20Enquiry" class="footer-link">Contact</a></li>
                             </ul>
                         </div>
 
-                        <!-- Services -->
                         <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
-                            <h5 class="heading text-white mb-3">What I Do</h5>
+                            <h5 class="heading text-white mb-3">Focus Areas</h5>
                             <ul class="list-unstyled">
-                                <li><span class="footer-link">Fullstack Web Development</span></li>
                                 <li><span class="footer-link">Backend Engineering</span></li>
-                                <li><span class="footer-link">Desktop Applications</span></li>
-                                <li><span class="footer-link">API Development</span></li>
+                                <li><span class="footer-link">API & Microservices</span></li>
+                                <li><span class="footer-link">Fintech Integrations</span></li>
+                                <li><span class="footer-link">IoT & Telemetry</span></li>
                             </ul>
                         </div>
 
-                        <!-- Social & Location -->
                         <div class="col-lg-3 col-md-4 mb-5 mb-lg-0">
-                            <h5 class="heading text-white mb-3">Connect</h5>
+                            <h5 class="heading text-white mb-3">Find Me</h5>
                             <ul class="nav flex-column">
                                 <li class="nav-item mb-2">
                                     <a class="nav-link footer-link p-0" href="${this.data.social.github}" 
@@ -73,12 +69,6 @@ class Footer extends Component {
                                         <i class="fab fa-twitter mr-2"></i> Twitter
                                     </a>
                                 </li>
-                                <li class="nav-item mb-2">
-                                    <a class="nav-link footer-link p-0" href="${this.data.social.facebook}" 
-                                       target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-facebook mr-2"></i> Facebook
-                                    </a>
-                                </li>
                             </ul>
                             <div class="mt-3">
                                 <p class="text-sm opacity-8 mb-0">
@@ -88,7 +78,6 @@ class Footer extends Component {
                         </div>
                     </div>
 
-                    <!-- Bottom bar -->
                     <div class="row align-items-center justify-content-md-between py-4 mt-5 delimiter-top">
                         <div class="col-md-6">
                             <div class="copyright text-sm font-weight-bold text-center text-md-left opacity-8">
@@ -96,13 +85,12 @@ class Footer extends Component {
                                 <a href="https://jjenus.github.io/" class="font-weight-bold text-white" 
                                    target="_blank" rel="noopener noreferrer">
                                     ${this.data.name}
-                                </a>. All rights reserved.
+                                </a>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <p class="text-sm text-center text-md-right mb-0 opacity-7">
-                                Built with <i class="fas fa-heart text-danger mx-1"></i> using 
-                                <span class="font-weight-bold text-white">Purpose UI</span>
+                                Built with Purpose UI · Deployed on GitHub Pages
                             </p>
                         </div>
                     </div>
@@ -114,7 +102,6 @@ class Footer extends Component {
     afterRender() {
         super.afterRender();
         
-        // Smooth scroll for footer links
         const footerLinks = this.querySelectorAll('[data-scroll-to]');
         footerLinks.forEach(link => {
             this.addEventListener(link, 'click', (e) => {

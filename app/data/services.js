@@ -4,21 +4,21 @@
  */
 const servicesData = [
     {
-        id: 'fullstack',
-        icon: 'fas fa-code',
-        title: 'Fullstack Web Development',
-        description: 'Design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management tools, and digital media. Develop web site maps, application models, image templates, or page templates that meet project goals, user needs, or industry standards.',
-        skills: ['Bootstrap', 'Vue.js', 'PHP', 'JavaScript', 'HTML5/CSS3'],
-        color: 'primary',
-        badgeColor: 'info',
+        id: 'backend',
+        icon: 'fas fa-server',
+        title: 'Backend Systems & APIs',
+        description: 'Design and build scalable RESTful APIs, microservices, and event-driven backend systems with Java and Spring Boot. Specialized in high-integrity transaction processing, real-time data pipelines, and secure payment integrations.',
+        skills: ['Java', 'Spring Boot', 'PostgreSQL', 'REST APIs', 'Microservices', 'ActiveMQ'],
+        color: 'success',
+        badgeColor: 'success',
         order: 1
     },
     {
-        id: 'backend',
-        icon: 'fas fa-terminal',
-        title: 'Backend Engineering',
-        description: 'Debug or build new server scripts in no time with core PHP and CodeIgniter 4. Purchase and renew DNS subscriptions and hosting space. Efficient database design and optimization.',
-        skills: ['JAVA/SPRINGBOOT', 'NODE.JS', 'SQL', 'PHP', 'RDBMS', 'API Design', 'Server Management'],
+        id: 'fullstack',
+        icon: 'fas fa-layer-group',
+        title: 'Fullstack Web Applications',
+        description: 'Build complete web platforms from database to frontend. Vue.js and Nuxt for responsive interfaces, Spring Boot, Node.js or PHP backends, with automated CI/CD pipelines and cloud deployment.',
+        skills: ['Vue.js', 'Nuxt', 'TypeScript', 'Node.js', 'TailwindCSS', 'React'],
         color: 'default',
         badgeColor: 'info',
         order: 2
@@ -26,9 +26,9 @@ const servicesData = [
     {
         id: 'desktop',
         icon: 'fab fa-java',
-        title: 'Desktop Application Development',
-        description: 'Design and build efficient desktop applications with Java. Create robust, cross-platform solutions using modern frameworks and best practices.',
-        skills: ['Java', 'JavaFX', 'Scene Builder', 'JDBC', 'SQLite'],
+        title: 'Desktop & Embedded Solutions',
+        description: 'Build robust desktop applications with Java and JavaFX. Experienced with hardware integration, biometric systems, and IoT device communication protocols.',
+        skills: ['Java', 'JavaFX', 'IoT Protocols', 'MQTT'],
         color: 'default',
         badgeColor: 'danger',
         order: 3

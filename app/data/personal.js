@@ -5,7 +5,7 @@
 const personalData = {
     name: 'Jenus Alakere',
     fullName: 'Alakere Jenus',
-    title: 'Jenus Alakere | Backend/Fullstack Software Engineer | Java & Spring Boot',
+    title: 'Backend/Fullstack Software Engineer',
     degree: 'B.Eng. Electrical & Electronics Engineering',
     tagline: 'Building reliable systems where data integrity matters.',
     description: 'Software engineer specializing in Java and Spring Boot, building scalable backend systems, real-time data pipelines and fullstack web applications.',
