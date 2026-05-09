@@ -12,7 +12,7 @@ class Services extends Component {
             <section class="slice slice-lg delimiter-top" aria-labelledby="services-heading">
                 <div class="container">
                     <div class="mb-5 text-center">
-                        <h3 id="services-heading" class="mt-4">My Services</h3>
+                        <h3 id="services-heading" class="mt-4">What I Do</h3>
                         <div class="fluid-paragraph mt-3">
                             <p class="lead lh-180">Start building fast, beautiful and modern looking websites in no time.</p>
                         </div>
@@ -31,14 +31,13 @@ class Services extends Component {
         const textColor = isPrimary ? 'text-white' : '';
         const descColor = isPrimary ? 'text-light' : '';
         
-        // Determine icon color class based on service
         let iconColorClass = '';
         if (isPrimary) {
-            iconColorClass = 'text-light'; // white icon on primary bg
+            iconColorClass = 'text-light';
         } else if (service.icon === 'fa-terminal') {
-            iconColorClass = 'text-info'; // blue terminal icon
+            iconColorClass = 'text-info';
         } else if (service.icon === 'fa-java') {
-            iconColorClass = 'text-danger'; // RED Java icon - this was missing!
+            iconColorClass = 'text-danger';
         }
         
         return `

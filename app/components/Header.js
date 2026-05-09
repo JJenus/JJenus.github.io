@@ -8,7 +8,7 @@ class Header extends Component {
     }
 
     template() {
-        const whatsappNumber = '2347048080326';
+        const whatsappNumber = this.data.whatsapp;
         const whatsappMessage = encodeURIComponent('Hi Jenus, I would like to discuss a project.');
         const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 

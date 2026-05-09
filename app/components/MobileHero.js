@@ -1,19 +1,21 @@
-import Component from '../core/Component.js';
-import personalData from '../data/personal.js';
+import Component from "../core/Component.js";
+import personalData from "../data/personal.js";
 
 class MobileHero extends Component {
-    constructor() {
-        super('mobile-hero-container');
-        this.data = personalData;
-    }
+	constructor() {
+		super("mobile-hero-container");
+		this.data = personalData;
+	}
 
-    template() {
-        return `
+	template() {
+		return `
             <div id="headers-header-4" class="d-md-none" aria-label="Mobile introduction">
                 <section class="spotlight pt-5 bg-cover bg-size--cover" 
                          data-spotlight="fullscreen" 
                          data-offset-top="#header-main" 
-                         style="background-image: url(${this.data.avatar}); padding-top: 187.188px; position: relative; overflow: hidden;">
+                         style="background-image: url(${
+								this.data.avatar
+							}); padding-top: 187.188px; position: relative; overflow: hidden;">
                     
                     <!-- Background SVG shapes - behind everything -->
                     <div class="bg-absolute-cover bg-size--contain d-flex align-items-center zindex-100" aria-hidden="true">
@@ -35,26 +37,34 @@ class MobileHero extends Component {
                                             <i class="fas fa-star"></i> Available for Projects
                                         </span>
                                         <h1 class="text-white lh-150 mb-3">
-                                            Hi, I'm <span style="font-weight: 800;">${this.data.name}</span>
+                                            Hi, I'm <span style="font-weight: 800;">${
+												this.data.name
+											}</span>
                                         </h1>
                                         <p class="text-white opacity-8 mb-3" style="font-size: 1rem;">
-                                            ${this.data.degree} · ${this.data.title}
+                                            ${this.data.title} · ${this.data.degree}
                                         </p>
                                         <p class="text-white opacity-7 mb-4" style="line-height: 1.7;">
                                             ${this.data.description}
                                         </p>
                                         <ul class="list-inline mb-4">
                                             <li class="list-inline-item text-white opacity-8 mr-3">
-                                                <i class="fas fa-calendar-check mr-1"></i> Since ${this.data.since}
+                                                <i class="fas fa-calendar-check mr-1"></i> Since ${
+													this.data.since
+												}
                                             </li>
                                             <li class="list-inline-item text-white opacity-8">
-                                                <i class="fas fa-map-marker-alt mr-1"></i> ${this.data.location}
+                                                <i class="fas fa-map-marker-alt mr-1"></i> ${
+													this.data.location
+												}
                                             </li>
                                         </ul>
                                         <span class="clearfix"></span>
                                         <div class="mt-3">
                                             <div class="d-flex justify-content-between align-items-center mb-3">
-                                                <a href="${this.data.social.github}" 
+                                                <a href="${
+													this.data.social.github
+												}" 
                                                    target="_blank"
                                                    rel="noopener noreferrer"
                                                    class="btn btn-white rounded-pill btn-icon"
@@ -62,7 +72,9 @@ class MobileHero extends Component {
                                                     <span class="btn-inner--text">GitHub</span>
                                                     <span class="btn-inner--icon"><i class="fab fa-github"></i></span>
                                                 </a>
-                                                <a href="${this.data.social.linkedin}" 
+                                                <a href="${
+													this.data.social.linkedin
+												}" 
                                                    target="_blank"
                                                    rel="noopener noreferrer"
                                                    class="btn btn-white rounded-pill"
@@ -97,10 +109,10 @@ class MobileHero extends Component {
                 </section>
             </div>
         `;
-    }
+	}
 
-    getBackgroundSVG() {
-        return `
+	getBackgroundSVG() {
+		return `
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1506.3 578.7" class="injected-svg svg-inject" aria-hidden="true">
                 <path class="fill-purple" d="M 147.269 295.566 C 147.914 293.9 149.399 292.705 151.164 292.431 L 167.694 289.863 C 169.459 289.588 171.236 290.277 172.356 291.668 L 182.845 304.699 C 183.965 306.091 184.258 307.974 183.613 309.64 L 177.572 325.239 C 176.927 326.905 175.442 328.1 173.677 328.375 L 157.147 330.943 C 155.382 331.217 153.605 330.529 152.485 329.137 L 141.996 316.106 C 140.876 314.714 140.583 312.831 141.228 311.165 L 147.269 295.566 Z"></path>
                 <path class="fill-green" d="M 92.927 474.881 C 93.309 473.896 94.187 473.19 95.23 473.028 L 105.002 471.51 C 106.045 471.347 107.096 471.754 107.758 472.577 L 113.959 480.28 C 114.621 481.103 114.794 482.216 114.413 483.201 L 110.841 492.423 C 110.46 493.408 109.582 494.114 108.539 494.277 L 98.767 495.795 C 97.723 495.957 96.673 495.55 96.011 494.727 L 89.81 487.024 C 89.148 486.201 88.975 485.088 89.356 484.103 L 92.927 474.881 Z"></path>
@@ -111,7 +123,7 @@ class MobileHero extends Component {
                 <path class="fill-red" d="M 1084.395 506.137 C 1084.908 504.812 1086.09 503.861 1087.494 503.643 L 1100.645 501.6 C 1102.049 501.381 1103.463 501.929 1104.354 503.036 L 1112.699 513.403 C 1113.59 514.51 1113.823 516.009 1113.31 517.334 L 1108.504 529.744 C 1107.99 531.07 1106.809 532.02 1105.405 532.239 L 1092.254 534.282 C 1090.85 534.5 1089.436 533.953 1088.545 532.845 L 1080.2 522.478 C 1079.309 521.371 1079.076 519.873 1079.589 518.547 L 1084.395 506.137 Z"></path>
             </svg>
         `;
-    }
+	}
 }
 
 export default MobileHero;

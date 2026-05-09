@@ -12,7 +12,12 @@ class Projects extends Component {
         return `
             <section class="slice" aria-labelledby="projects-heading">
                 <div class="container">
-                    <h3 id="projects-heading" class="pt-4 text-center mb-4">Projects</h3>
+                    <div class="mb-5 text-center">
+                        <h3 id="projects-heading" class="mt-4">Projects</h3>
+                        <div class="fluid-paragraph mt-3">
+                            <p class="lead lh-180">Selected work across fintech, fleet tracking, and enterprise systems.</p>
+                        </div>
+                    </div>
                     <div class="row">
                         ${this.getFilteredProjects().map(project => this.createProjectCard(project)).join('')}
                     </div>
@@ -29,7 +34,7 @@ class Projects extends Component {
     createProjectCard(project) {
         const actionIcon = project.icon === 'download' ? 'fa-download' : 'fa-eye';
         const githubLink = project.privateRepo 
-            ? `<span class="action-item mr-3 text-muted" title="Private repository">
+            ? `<span class="action-item mr-3 text-white-50" title="Private repository">
                  <i class="fas fa-lock"></i>
                </span>`
             : `<a href="${project.githubUrl}" class="action-item mr-3" target="_blank" rel="noopener noreferrer">

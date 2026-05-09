@@ -6,9 +6,10 @@ const personalData = {
     name: 'Jenus Alakere',
     fullName: 'Alakere Cenus Jenus',
     title: 'Software Engineer',
-    degree: 'B.Eng in Electrical and Electronics Engineering',
+    degree: 'B.Eng Electrical & Electronics Engineering',
     tagline: 'Self motivated, eager to learn and improve.',
     description: 'I put all my experience and technical know-how in all projects to give the best solution and product.',
+    whatsapp: "2348157868666",
     since: 2019,
     avatar: './assets/img/jenus.png',
     logo: {

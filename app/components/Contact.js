@@ -14,8 +14,7 @@ class Contact extends Component {
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-8 text-center">
                             <h3 id="contact-heading" class="font-weight-400">
-                                I am ready to start a new project with 
-                                <span class="font-weight-700">you</span> anytime
+                                Ready to start a project with <span class="font-weight-700">you</span>
                             </h3>
                             <div class="mt-5">
                                 <a href="mailto:${this.data.email.business}?&subject=Enquiry%20on%20starting%20a%20project%20&body=Please%20include%20project%20description%20here%20and%20desired%20info." 
