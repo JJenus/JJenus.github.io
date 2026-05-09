@@ -4,19 +4,19 @@
  */
 const personalData = {
     name: 'Jenus Alakere',
-    fullName: 'Alakere Cenus Jenus',
-    title: 'Software Engineer',
-    degree: 'B.Eng Electrical & Electronics Engineering',
-    tagline: 'Self motivated, eager to learn and improve.',
-    description: 'I put all my experience and technical know-how in all projects to give the best solution and product.',
+    fullName: 'Alakere Jenus',
+    title: 'Jenus Alakere | Backend/Fullstack Software Engineer | Java & Spring Boot',
+    degree: 'B.Eng. Electrical & Electronics Engineering',
+    tagline: 'Building reliable systems where data integrity matters.',
+    description: 'Software engineer specializing in Java and Spring Boot, building scalable backend systems, real-time data pipelines and fullstack web applications.',
     whatsapp: "2348157868666",
     since: 2019,
-    avatar: './assets/img/jenus.png',
+    avatar: '/assets/img/jenus.png',
     logo: {
-        dark: './assets/img/logo/purple.png',
-        light: './assets/img/logo/white.png'
+        dark: '/assets/img/logo/purple.png',
+        light: '/assets/img/logo/white.png'
     },
-    resume: './assets/docs/cv-alakere-cenus.pdf',
+    resume: '/assets/docs/alakere_jenus_swe_cv.pdf',
     email: {
         business: 'biz.jenus@gmail.com',
         personal: 'alakerejenus@gmail.com'
@@ -29,11 +29,11 @@ const personalData = {
         facebook: 'https://www.facebook.com/alakerejenus'
     },
     seo: {
-        title: 'Jenus Alakere - Software Engineer | Fullstack Developer',
-        description: 'Official portfolio of Jenus Alakere - B.Eng in Electrical & Electronics Engineering. Experienced Software Engineer specializing in Fullstack Web Development, Backend Engineering, and Desktop Applications.',
-        keywords: 'Jenus Alakere, Software Engineer, Fullstack Developer, Web Development, PHP, Vue.js, Java, Nigeria',
+        title: 'Jenus Alakere | Backend/Fullstack Software Engineer | Java & Spring Boot',
+        description: 'Official portfolio of Jenus Alakere - Backend Software Engineer with fullstack experience, specializing in Java, Spring Boot, fintech systems, IoT platforms, and scalable backend architectures.',
+        keywords: 'Jenus Alakere, Backend Engineer, Java, Spring Boot, Fintech, IoT, Microservices, PostgreSQL, MQTT, Software Engineer Nigeria, Fullstack Developer, Node.js, Vue.js, PHP ',
         author: 'Jenus Alakere',
-        ogImage: './assets/img/jenus.png',
+        ogImage: '/assets/img/jenus.png',
         ogType: 'website',
         twitterCard: 'summary_large_image'
     }
