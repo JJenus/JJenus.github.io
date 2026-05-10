@@ -29,9 +29,9 @@ const personalData = {
         facebook: 'https://www.facebook.com/alakerejenus'
     },
     seo: {
-        title: 'Jenus Alakere | Backend/Fullstack Software Engineer | Java & Spring Boot',
+        title: 'Jenus Alakere | Backend & Fullstack Software Engineer | Java & Spring Boot',
         description: 'Official portfolio of Jenus Alakere - Backend Software Engineer with fullstack experience, specializing in Java, Spring Boot, fintech systems, IoT platforms, and scalable backend architectures.',
-        keywords: 'Jenus Alakere, Backend Engineer, Java, Spring Boot, Fintech, IoT, Microservices, PostgreSQL, MQTT, Software Engineer Nigeria, Fullstack Developer, Node.js, Vue.js, PHP ',
+        keywords: 'Jenus Alakere, Backend Engineer, Java, Spring Boot, Fintech, IoT, Microservices, PostgreSQL, MQTT, Software Engineer Nigeria, Fullstack Developer, Node.js, Vue.js, PHP',
         author: 'Jenus Alakere',
         ogImage: '/assets/img/jenus.png',
         ogType: 'website',
